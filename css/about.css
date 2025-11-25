@@ -1,0 +1,467 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== LOGO (Fixed Position) ===== */
+.logo {
+    text-decoration: none;
+    display: inline-block;
+    position: fixed;
+    top: 25px;
+    left: 50px;
+    z-index: 100;
+}
+
+.logo h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+    letter-spacing: 3px;
+    font-weight: 700;
+    transition: transform 0.3s ease;
+    margin: 0;
+}
+
+.logo h1:hover {
+    transform: scale(1.05);
+}
+
+/* ===== NAVIGATION (Fixed Position) ===== */
+.navbar {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.navbar a:hover {
+    background: rgba(33, 128, 141, 0.8);
+    border-color: #21808d;
+}
+
+/* Login Button Styling */
+.navbar a.login-btn {
+    background: #21808d;
+    border: 2px solid #21808d;
+    color: #ffffff;
+    padding: 12px 28px;
+    font-weight: 600;
+}
+
+.navbar a.login-btn:hover {
+    background: #41a8a1;
+    border-color: #41a8a1;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    background: linear-gradient(135deg, #21808d 0%, #41a8a1 100%);
+    color: #ffffff;
+    padding: 150px 20px 100px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    opacity: 0.95;
+}
+
+/* ===== ABOUT SECTION ===== */
+.about {
+    padding: 80px 20px;
+    background: #ffffff;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    color: #21808d;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== MISSION & VISION ===== */
+.mission-vision {
+    background: #f9f9f9;
+    padding: 80px 20px;
+}
+
+.mission-vision .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+.mission-card, .vision-card, .values-card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.mission-card h3, .vision-card h3, .values-card h3 {
+    font-size: 1.5rem;
+    color: #21808d;
+    margin-bottom: 15px;
+}
+
+.mission-card p, .vision-card p, .values-card p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* ===== WHY US SECTION ===== */
+.why-us {
+    padding: 80px 20px;
+    background: #ffffff;
+}
+
+.why-us h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #21808d;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.feature-card {
+    text-align: center;
+    padding: 30px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    box-shadow: 0 10px 30px rgba(33, 128, 141, 0.2);
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    font-size: 1.3rem;
+    color: #21808d;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.feature-card p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* ===== TEAM SECTION ===== */
+.team {
+    background: #f9f9f9;
+    padding: 80px 20px;
+}
+
+.team h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #21808d;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.team-intro {
+    text-align: center;
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+.team-member {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.member-avatar {
+    font-size: 4rem;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    color: #21808d;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.team-member p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.member-bio {
+    font-size: 0.9rem;
+    color: #999;
+    font-style: italic;
+}
+
+/* ===== CTA SECTION ===== */
+.cta {
+    background: linear-gradient(135deg, #21808d 0%, #41a8a1 100%);
+    color: #ffffff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.cta p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.95;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: #ffffff;
+    color: #21808d;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.btn-secondary:hover {
+    background: #ffffff;
+    color: #21808d;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background: #1a1a1a;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .logo {
+        top: 15px;
+        left: 20px;
+    }
+
+    .logo h1 {
+        font-size: 1.8rem;
+    }
+
+    .navbar {
+        top: 70px;
+        right: 10px;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .navbar a {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .navbar a.login-btn {
+        padding: 8px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .about-text h2 {
+        font-size: 2rem;
+    }
+
+    .why-us h2, .team h2, .cta h2 {
+        font-size: 2rem;
+    }
+
+    .features-grid, .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        top: 15px;
+        left: 15px;
+    }
+
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    .navbar {
+        top: 65px;
+        right: 10px;
+    }
+
+    .navbar a {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+
+    .navbar a.login-btn {
+        padding: 6px 16px;
+    }
+
+    .hero {
+        padding: 100px 15px 80px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .about, .mission-vision, .why-us, .team, .cta {
+        padding: 40px 15px;
+    }
+
+    .about-text h2, .why-us h2, .team h2, .cta h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-text p, .mission-card p, .vision-card p {
+        font-size: 0.95rem;
+    }
+
+    .team-member h3, .mission-card h3, .vision-card h3, .values-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .feature-icon {
+        font-size: 2rem;
+    }
+
+    .member-avatar {
+        font-size: 3rem;
+    }
+}
