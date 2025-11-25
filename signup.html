@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrandeGo. - Sign Up</title>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <div class="signup-container">
+        <!-- Left Side - Branding -->
+        <div class="signup-left">
+            <div class="branding">
+                <h1>GrandeGo.</h1>
+                <p class="tagline">Join Our Community!</p>
+            </div>
+            <div class="benefits">
+                <div class="benefit-item">
+                    <span class="icon">🎁</span>
+                    <h3>Exclusive Rewards</h3>
+                    <p>Earn points on every order & reservation</p>
+                </div>
+                <div class="benefit-item">
+                    <span class="icon">🚀</span>
+                    <h3>Quick Checkout</h3>
+                    <p>Save your preferences for faster ordering</p>
+                </div>
+                <div class="benefit-item">
+                    <span class="icon">📧</span>
+                    <h3>Special Offers</h3>
+                    <p>Get updates on new menu items & promotions</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side - Sign Up Form -->
+        <div class="signup-right">
+            <div class="signup-box">
+                <h2>Create Account</h2>
+                <p class="subtitle">Join GrandeGo. today</p>
+
+                <form class="signup-form" id="signupForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" placeholder="John" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+63 XXX XXX XXXX" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="••••••••" required>
+                        <span class="password-hint">At least 8 characters</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="••••••••" required>
+                    </div>
+
+                    <div class="form-check">
+                        <label>
+                            <input type="checkbox" name="terms" required> I agree to the <a href="#" class="link">Terms of Service</a> and <a href="#" class="link">Privacy Policy</a>
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <label>
+                            <input type="checkbox" name="newsletter"> Subscribe to our newsletter for exclusive offers
+                        </label>
+                    </div>
+
+                    <button type="submit" class="signup-btn">Create Account</button>
+                </form>
+
+                <div class="divider">
+                    <span>or</span>
+                </div>
+
+                <button class="social-btn google-btn">
+                    <span class="icon">🔤</span> Sign up with Google
+                </button>
+
+                <div class="login-section">
+                    <p>Already have an account? <a href="login.html" class="login-link">Sign in here</a></p>
+                </div>
+
+                <div class="back-to-home">
+                    <a href="index.html" class="back-link">← Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            const terms = document.querySelector('input[name="terms"]').checked;
+            
+            // Validation
+            if (!firstName || !lastName || !email || !phone || !password || !confirmPassword) {
+                alert('Please fill in all required fields');
+                return;
+            }
+            
+            if (password.length < 8) {
+                alert('Password must be at least 8 characters');
+                return;
+            }
+            
+            if (password !== confirmPassword) {
+                alert('Passwords do not match');
+                return;
+            }
+            
+            if (!terms) {
+                alert('Please agree to the Terms of Service and Privacy Policy');
+                return;
+            }
+            
+            alert('Account created successfully! Welcome to GrandeGo.');
+            // In a real application, this would send data to a server
+            // window.location.href = 'login.html';
+        });
+
+        document.querySelector('.google-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('Google sign-up would be implemented here');
+        });

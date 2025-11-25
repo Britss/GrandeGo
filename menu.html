@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrandeGo. - Menu</title>
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+    <!-- Navigation (Same as index.html) -->
+    <a href="index.html" class="logo">
+        <h1>GrandeGo.</h1>
+    </a>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="reserve.html">Reserve</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="login-btn">Login</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Our Menu</h1>
+            <p>Freshly Baked Pan De Sal & Premium Coffee</p>
+        </div>
+    </section>
+
+    <!-- Menu Filters -->
+    <section class="menu-filters">
+        <div class="container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="coffee">Coffee</button>
+            <button class="filter-btn" data-filter="pandesal">Pan De Sal</button>
+            <button class="filter-btn" data-filter="pastries">Pastries</button>
+            <button class="filter-btn" data-filter="sandwiches">Sandwiches</button>
+        </div>
+    </section>
+
+    <!-- Menu Items -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <!-- Coffee Section -->
+            <div class="menu-category" data-category="coffee">
+                <h2>☕ Coffee</h2>
+                <div class="menu-items-grid">
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Espresso</h3>
+                            <span class="price">₱80</span>
+                        </div>
+                        <p class="item-desc">Rich and intense, our signature espresso shot.</p>
+                        <div class="item-tags">
+                            <span class="tag">Hot</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Americano</h3>
+                            <span class="price">₱100</span>
+                        </div>
+                        <p class="item-desc">Smooth espresso diluted with hot water.</p>
+                        <div class="item-tags">
+                            <span class="tag">Hot</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Latte</h3>
+                            <span class="price">₱120</span>
+                        </div>
+                        <p class="item-desc">Creamy espresso with steamed milk and foam.</p>
+                        <div class="item-tags">
+                            <span class="tag">Hot</span>
+                            <span class="tag">Iced</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Cappuccino</h3>
+                            <span class="price">₱120</span>
+                        </div>
+                        <p class="item-desc">Bold espresso with equal parts steamed milk and foam.</p>
+                        <div class="item-tags">
+                            <span class="tag">Hot</span>
+                            <span class="tag">Iced</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Mocha</h3>
+                            <span class="price">₱140</span>
+                        </div>
+                        <p class="item-desc">Espresso, steamed milk, and rich chocolate.</p>
+                        <div class="item-tags">
+                            <span class="tag">Hot</span>
+                            <span class="tag">Iced</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Macchiato</h3>
+                            <span class="price">₱100</span>
+                        </div>
+                        <p class="item-desc">Espresso "marked" with a touch of steamed milk.</p>
+                        <div class="item-tags">
+                            <span class="tag">Hot</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pan De Sal Section -->
+            <div class="menu-category" data-category="pandesal">
+                <h2>🥖 Pan De Sal</h2>
+                <div class="menu-items-grid">
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Classic Pan De Sal</h3>
+                            <span class="price">₱35</span>
+                        </div>
+                        <p class="item-desc">Traditional soft bread roll with butter and salt.</p>
+                        <div class="item-tags">
+                            <span class="tag">Popular</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Cheese Pan De Sal</h3>
+                            <span class="price">₱45</span>
+                        </div>
+                        <p class="item-desc">Topped with melted cheddar cheese.</p>
+                        <div class="item-tags">
+                            <span class="tag">Favorite</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Ham & Cheese Pan De Sal</h3>
+                            <span class="price">₱50</span>
+                        </div>
+                        <p class="item-desc">Filled with ham and melted cheese.</p>
+                        <div class="item-tags">
+                            <span class="tag">Savory</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Ensaymada</h3>
+                            <span class="price">₱50</span>
+                        </div>
+                        <p class="item-desc">Sweet spiral bread with brown sugar and cheese.</p>
+                        <div class="item-tags">
+                            <span class="tag">Sweet</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pastries Section -->
+            <div class="menu-category" data-category="pastries">
+                <h2>🧁 Pastries</h2>
+                <div class="menu-items-grid">
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Croissant</h3>
+                            <span class="price">₱60</span>
+                        </div>
+                        <p class="item-desc">Buttery, flaky French pastry.</p>
+                        <div class="item-tags">
+                            <span class="tag">Pastry</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Chocolate Croissant</h3>
+                            <span class="price">₱70</span>
+                        </div>
+                        <p class="item-desc">Croissant filled with rich dark chocolate.</p>
+                        <div class="item-tags">
+                            <span class="tag">Indulgent</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Muffin</h3>
+                            <span class="price">₱55</span>
+                        </div>
+                        <p class="item-desc">Choose from Blueberry, Chocolate, or Vanilla.</p>
+                        <div class="item-tags">
+                            <span class="tag">Variety</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Bagel</h3>
+                            <span class="price">₱65</span>
+                        </div>
+                        <p class="item-desc">Toasted bagel with cream cheese and jam.</p>
+                        <div class="item-tags">
+                            <span class="tag">Breakfast</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sandwiches Section -->
+            <div class="menu-category" data-category="sandwiches">
+                <h2>🥪 Sandwiches</h2>
+                <div class="menu-items-grid">
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Classic BLT</h3>
+                            <span class="price">₱180</span>
+                        </div>
+                        <p class="item-desc">Bacon, lettuce, tomato, and mayo on fresh bread.</p>
+                        <div class="item-tags">
+                            <span class="tag">Savory</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Caprese</h3>
+                            <span class="price">₱190</span>
+                        </div>
+                        <p class="item-desc">Mozzarella, tomato, basil, and balsamic vinegar.</p>
+                        <div class="item-tags">
+                            <span class="tag">Vegetarian</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Turkey & Avocado</h3>
+                            <span class="price">₱210</span>
+                        </div>
+                        <p class="item-desc">Sliced turkey with fresh avocado and aioli.</p>
+                        <div class="item-tags">
+                            <span class="tag">Healthy</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Grilled Chicken</h3>
+                            <span class="price">₱200</span>
+                        </div>
+                        <p class="item-desc">Grilled chicken breast with roasted vegetables.</p>
+                        <div class="item-tags">
+                            <span class="tag">Protein</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Items -->
+    <section class="specials">
+        <div class="container">
+            <h2>✨ House Specials</h2>
+            <div class="specials-grid">
+                <div class="special-item">
+                    <h3>GrandeGo. Signature Blend</h3>
+                    <p>Our expertly crafted coffee blend with notes of chocolate and hazelnut.</p>
+                    <span class="price">₱130</span>
+                </div>
+                <div class="special-item">
+                    <h3>Seasonal Pan De Sal</h3>
+                    <p>Rotating seasonal flavors featuring local ingredients.</p>
+                    <span class="price">₱40-60</span>
+                </div>
+                <div class="special-item">
+                    <h3>Barista's Choice Combo</h3>
+                    <p>Coffee + Pan De Sal pairing selected by our master barista.</p>
+                    <span class="price">₱150</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Order?</h2>
+            <p>Visit us or order online for delivery</p>
+            <div class="cta-buttons">
+                <a href="index.html" class="btn btn-primary">Order Online</a>
+                <a href="about.html" class="btn btn-secondary">Visit Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 GrandeGo. Pan De Sal + Coffee. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Menu filter functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const menuCategories = document.querySelectorAll('.menu-category');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                menuCategories.forEach(category => {
+                    if (filterValue === 'all' || category.getAttribute('data-category') === filterValue) {
+                        category.style.display = 'block';
+                    } else {
+                        category.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

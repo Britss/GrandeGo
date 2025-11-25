@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrandeGo. - Coffee Shop</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="coffee-cup">
+            <div class="cup-body"></div>
+            <div class="cup-handle"></div>
+            <div class="steam steam-1"></div>
+            <div class="steam steam-2"></div>
+            <div class="steam steam-3"></div>
+        </div>
+        <h1>GrandeGo.</h1>
+        <p>Loading...</p>
+    </div>
+
+    <!-- Background Image -->
+    <div class="background-image"></div>
+    
+    <!-- Main Content -->
+    <div class="overlay-content">
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+            <h1>GrandeGo.</h1>
+        </a>
+
+        <!-- Navigation -->
+        <nav>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="reserve.html">Reserve</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html" class="login-btn">Login</a>
+        </nav>
+
+        <!-- Hero Text -->
+        <div class="hero-text">
+            <h2>Freshly Baked, Freshly Brewed - EVERY. SINGLE. DAY.</h2>
+            <p>PAN DE SAL + COFFEE</p>
+        </div>
+
+        <!-- CTA Buttons -->
+        <div class="cta-buttons">
+            <a href="#reserve" class="btn btn-primary">Book Reservation</a>
+            <a href="#order" class="btn btn-secondary">Order Online</a>
+        </div>
+    </div>
+
+    <script>
+        // Preloader script
+        window.addEventListener('load', function() {
+            const preloader = document.getElementById('preloader');
+            setTimeout(function() {
+                preloader.classList.add('hidden');
+            }, 2000);
+        });
+    </script>
+</body>
+</html>

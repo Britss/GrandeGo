@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrandeGo. - Contact Us</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <a href="index.html" class="logo">
+        <h1>GrandeGo.</h1>
+    </a>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="reserve.html">Reserve</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="login-btn">Login</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Get In Touch</h1>
+            <p>We'd Love to Hear From You</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="contact-container">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2>Send us a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <!-- Name Row -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="John" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+                            </div>
+                        </div>
+
+                        <!-- Email & Phone Row -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+63 XXX XXX XXXX">
+                            </div>
+                        </div>
+
+                        <!-- Subject -->
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="event">Event Catering</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="partnership">Partnership</option>
+                                <option value="complaint">Complaint</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Tell us what's on your mind..." rows="6" required></textarea>
+                            <span class="char-count"><span id="charCount">0</span>/1000</span>
+                        </div>
+
+                        <!-- Preferences -->
+                        <div class="form-group preferences">
+                            <label>Preferred Contact Method</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="contact-method" value="email" required> Email
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="contact-method" value="phone"> Phone
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="contact-method" value="either"> Either
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Checkbox Agreement -->
+                        <div class="form-check">
+                            <label>
+                                <input type="checkbox" name="subscribe" checked> Subscribe to our newsletter for updates and special offers
+                            </label>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Info Sidebar -->
+                <div class="info-sidebar">
+                    <!-- Main Contact -->
+                    <div class="info-card">
+                        <h3>📍 Visit Us</h3>
+                        <p>123 Coffee Street</p>
+                        <p>Quezon City, Metro Manila</p>
+                        <p>Philippines 1100</p>
+                        <a href="#" class="map-link">Get Directions →</a>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="info-card">
+                        <h3>📞 Call Us</h3>
+                        <p><strong>Main:</strong> (02) 1234-5678</p>
+                        <p><strong>Reservations:</strong> (02) 1234-5679</p>
+                        <p><strong>Catering:</strong> (02) 1234-5680</p>
+                        <p class="info-subtitle">Available Mon-Sun, 7 AM - 9 PM</p>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="info-card">
+                        <h3>✉️ Email Us</h3>
+                        <p><strong>General:</strong> <a href="mailto:hello@grandego.ph">hello@grandego.ph</a></p>
+                        <p><strong>Reservations:</strong> <a href="mailto:reserve@grandego.ph">reserve@grandego.ph</a></p>
+                        <p><strong>Events:</strong> <a href="mailto:events@grandego.ph">events@grandego.ph</a></p>
+                    </div>
+
+                    <!-- Hours -->
+                    <div class="info-card">
+                        <h3>🕐 Business Hours</h3>
+                        <p><strong>Monday - Friday:</strong></p>
+                        <p>7:00 AM - 9:00 PM</p>
+                        <p><strong>Saturday - Sunday:</strong></p>
+                        <p>8:00 AM - 10:00 PM</p>
+                        <p><strong>Holidays:</strong></p>
+                        <p>9:00 AM - 8:00 PM</p>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="info-card">
+                        <h3>🌐 Follow Us</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link">Facebook</a>
+                            <a href="#" class="social-link">Instagram</a>
+                            <a href="#" class="social-link">Twitter</a>
+                            <a href="#" class="social-link">YouTube</a>
+                        </div>
+                    </div>
+
+                    <!-- Response Time -->
+                    <div class="info-card special">
+                        <h3>⏱️ Response Time</h3>
+                        <p>We typically respond to all inquiries within 24 hours during business days.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Find Us On The Map</h2>
+            <div class="map-placeholder">
+                <div class="map-content">
+                    <span class="map-icon">📍</span>
+                    <h3>GrandeGo. Coffee Shop</h3>
+                    <p>123 Coffee Street, Quezon City</p>
+                    <a href="#" class="btn btn-primary">Open in Maps</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>❓ How do I make a reservation?</h3>
+                    <p>You can reserve a table through our <a href="reserve.html">Reserve page</a> or call us at (02) 1234-5679. We accept reservations up to 30 days in advance.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>❓ Do you offer catering services?</h3>
+                    <p>Yes! We offer catering for events and meetings. Please email us at events@grandego.ph or call (02) 1234-5680 for more information.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>❓ What are your cancellation policies?</h3>
+                    <p>Cancellations must be made at least 24 hours before your reservation. Late cancellations may forfeit a 20% booking fee.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>❓ Do you have vegetarian options?</h3>
+                    <p>Yes! We offer several vegetarian pastries and sandwiches. Check our <a href="menu.html">Menu</a> for full details.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>❓ Is there free WiFi?</h3>
+                    <p>Yes! Free high-speed WiFi is available to all customers. Network: GrandeGo_WiFi | Password: CoffeeLovers2025</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>❓ Do you offer delivery?</h3>
+                    <p>Currently, we operate as a dine-in and walk-in only café. We're working on a delivery service soon!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Come Visit Us Today!</h2>
+            <p>Experience the finest Pan De Sal and coffee in the city</p>
+            <div class="cta-buttons">
+                <a href="reserve.html" class="btn btn-primary">Make a Reservation</a>
+                <a href="index.html" class="btn btn-secondary">Back to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 GrandeGo. Pan De Sal + Coffee. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Character counter for message
+        const messageInput = document.getElementById('message');
+        const charCount = document.getElementById('charCount');
+
+        messageInput.addEventListener('input', function() {
+            const length = this.value.length;
+            charCount.textContent = length > 1000 ? 1000 : length;
+            
+            if (length > 1000) {
+                this.value = this.value.substring(0, 1000);
+            }
+        });
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const firstName = document.getElementById('firstName').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+
+            // Validation
+            if (!firstName || !email || !subject || !message) {
+                alert('Please fill in all required fields');
+                return;
+            }
+
+            // Success message
+            alert(`Thank you for contacting us!\n\nWe've received your message and will get back to you within 24 hours at ${email}\n\nSubject: ${subject}`);
+            
+            // Reset form
+            this.reset();
+            charCount.textContent = '0';
+        });
+
+        // Set default radio button
+        document.querySelector('input[name="contact-method"][value="email"]').checked = true;
+    </script>
+</body>
+</html>
