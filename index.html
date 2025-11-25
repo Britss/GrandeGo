@@ -30,8 +30,15 @@
             <h1>GrandeGo.</h1>
         </a>
 
+        <!-- Mobile Menu Toggle -->
+        <div class="hamburger-menu" id="hamburgerMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
         <!-- Navigation -->
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
             <a href="about.html">About</a>
             <a href="menu.html">Menu</a>
             <a href="reserve.html">Reserve</a>
@@ -59,6 +66,32 @@
             setTimeout(function() {
                 preloader.classList.add('hidden');
             }, 2000);
+        });
+
+        // Mobile menu toggle
+        const hamburger = document.getElementById('hamburgerMenu');
+        const navbar = document.getElementById('navbar');
+
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            navbar.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        const navLinks = document.querySelectorAll('.navbar a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                hamburger.classList.remove('active');
+                navbar.classList.remove('active');
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.hamburger-menu') && !event.target.closest('.navbar')) {
+                hamburger.classList.remove('active');
+                navbar.classList.remove('active');
+            }
         });
     </script>
 </body>
